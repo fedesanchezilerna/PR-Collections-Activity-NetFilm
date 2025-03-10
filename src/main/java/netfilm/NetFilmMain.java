@@ -1,10 +1,10 @@
 package netfilm;
 
-public class NetFilmMain {
+public class  NetFilmMain {
     public static void main(String[] args) {
-        // Instantiate Netfilm
+        // Instantiate NetFilm
         System.out.println("Instantiate NetFilm");
-        // NetFilm netFilm = new NetFilm("NETFILM");
+        NetFilm netFilm = new NetFilm("NETFILM");
 
         // Instantiate Banks
         System.out.println("Instantiate Banks");
@@ -39,30 +39,32 @@ public class NetFilmMain {
 
         System.out.println("Print Clients");
         System.out.println(cl1);
-        System.out.println(cl2.toString());
-        System.out.println(cl3.toString());
-        System.out.println(cl4.toString());
-        System.out.println(cl5.toString());
-        System.out.println(cl6.toString());
-        System.out.println(cl7.toString());
-        System.out.println(cl8.toString());
-        System.out.println(cl9.toString());
-        System.out.println(cl10.toString());
-        System.out.println(cl11.toString()); // Duplicated dni
-        System.out.println(cl12.toString()); // Duplicated dni
+        System.out.println(cl2);
+        System.out.println(cl3);
+        System.out.println(cl4);
+        System.out.println(cl5);
+        System.out.println(cl6);
+        System.out.println(cl7);
+        System.out.println(cl8);
+        System.out.println(cl9);
+        System.out.println(cl10);
+        System.out.println(cl11); // Duplicated dni
+        System.out.println(cl12); // Duplicated dni
 
         System.out.println("Sign Subscriptions");
-        // System.out.println(netFilm.signSubscription(cl1));
-        // System.out.println(netFilm.signSubscription(cl2));
-        // System.out.println(netFilm.signSubscription(cl3));
-        // System.out.println(netFilm.signSubscription(cl4));
-        // System.out.println(netFilm.signSubscription(cl5));
-        // System.out.println(netFilm.signSubscription(cl6));
-        // System.out.println(netFilm.signSubscription(cl7));
-        // System.out.println(netFilm.signSubscription(cl8));
-        // System.out.println(netFilm.signSubscription(cl9));
-        // System.out.println(netFilm.signSubscription(cl10));
-        // System.out.println(netFilm.signSubscription(cl11));
-        // System.out.println(netFilm.signSubscription(cl12));
+        System.out.println(netFilm);
+        System.out.println(netFilm.signSubscription(cl1));
+        System.out.println(netFilm.signSubscription(cl2));
+        System.out.println(netFilm.signSubscription(cl3));
+        System.out.println(netFilm.signSubscription(cl4));
+        System.out.println(netFilm.signSubscription(cl5));
+        System.out.println(netFilm.signSubscription(cl6));
+        System.out.println(netFilm.signSubscription(cl7));
+        System.out.println(netFilm.signSubscription(cl8));
+        System.out.println(netFilm.signSubscription(cl9));
+        System.out.println(netFilm.signSubscription(cl10));
+        System.out.println(netFilm.signSubscription(cl11));
+        System.out.println(netFilm.signSubscription(cl12));
+        System.out.println(netFilm);
     }
 }

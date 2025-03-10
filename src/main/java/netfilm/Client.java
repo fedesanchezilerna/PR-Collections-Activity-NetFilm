@@ -11,7 +11,7 @@ public class Client {
     private String iban;
     private Bank bank;
 
-    private static final int idNext = 1;
+    private static int idNext = 1;
 
     public Client(String name, String dni, Subscription subscription, String initialDate, String endDate, String iban,
             Bank bank) {
@@ -36,7 +36,6 @@ public class Client {
     /**
      * Generates a code with the following format:
      * XXXXX-YYYY
-     * 
      * XXXXX: 5-digit number, with zeros on the left auto-incremented
      * YYYY: the 4 last digits of the dni. In case the dni is less than 4 digits,
      * the code will be padded with zeros on the left.
@@ -45,10 +44,8 @@ public class Client {
      * @return the code of the client
      */
     private String generateCode(String dni) {
-        int id = idNext;
-        String code = String.format("%05d", id++);
-        code += dni.substring(dni.length() - 4);
-        return code;
+        String code = String.format("%05d", idNext++);
+        return code + "-" + dni.substring(dni.length() - 4);
     }
 
     public String getCode() {
