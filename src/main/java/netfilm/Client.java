@@ -1,7 +1,5 @@
 package netfilm;
 
-import com.joanseculi.timejump.TimeJump;
-
 public class Client {
     private static final String END_DATE = "31/12/9999";
     private String code;
@@ -32,7 +30,7 @@ public class Client {
     }
 
     public Client(String name, String dni, Subscription subscription, String iban, Bank bank) {
-        this(name, dni, subscription, TimeJump.todayDate(), END_DATE, iban, bank);
+        this(name, dni, subscription, END_DATE, iban, bank);
     }
 
     /**
